@@ -1,9 +1,14 @@
 /* Basic Setup */
+:root {
+  --text-dark: #1f2937;
+  --text-medium: #4b5563;
+  --text-light: #6b7280;
+}
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     background-color: #000;
-    color: #fff;
+    color: var(--text-dark);
     overflow-x: hidden;
 }
 
@@ -27,7 +32,7 @@ header {
     align-items: center;
     padding: 20px 50px;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.9); /* Make more opaque */
 }
 
 .logo {
@@ -39,6 +44,18 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+}
+
+.nav-link {
+  color: var(--text-dark); /* Change from white or other light colors */
+}
+
+.nav-link:hover {
+  color: #3b82f6; /* Change from white */
+}
+
+.nav-link.active {
+  color: #3b82f6; /* Change from white */
 }
 
 /* Hero Section */
@@ -75,6 +92,12 @@ section {
 section h2 {
     font-size: 2.5em;
     margin-bottom: 50px;
+}
+
+.section-title,
+.slide-title,
+.service-title {
+  color: var(--text-dark); /* Change from white */
 }
 
 /* Portfolio */
@@ -117,6 +140,11 @@ section h2 {
 footer {
     text-align: center;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-section h3 {
+  color: var(--text-dark); /* Change from white */
 }
 
 /* AI Avatar */
@@ -148,7 +176,7 @@ footer {
     right: 0;
     width: 350px;
     height: 500px;
-    background-color: #111;
+    background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     flex-direction: column;
 }
@@ -159,6 +187,10 @@ footer {
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #333;
+}
+
+#ai-chat-header h3 {
+  color: var(--text-dark); /* Change from white */
 }
 
 #language-selector .lang-btn {
@@ -196,7 +228,8 @@ footer {
 }
 
 .chat-message.bot {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.05); /* Lighter background */
+    color: var(--text-dark); /* Change from white */
     align-self: flex-start;
 }
 
@@ -215,9 +248,9 @@ footer {
 
 #chat-input {
     flex-grow: 1;
-    background: #333;
+    background: rgba(0, 0, 0, 0.05);
     border: none;
-    color: #fff;
+    color: var(--text-dark);
     padding: 10px;
     border-radius: 5px;
 }
@@ -230,4 +263,25 @@ footer {
     margin-left: 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Added styles for Fix 2 */
+.carousel-container {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Added styles for Fix 3 */
+.gradient-bg {
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
+}
+
+.shape {
+  opacity: 0.05; /* Reduce opacity */
 }
