@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlights Creation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">SPOTLIGHTS CREATION</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <video autoplay muted loop id="hero-video">
+                <source src="videos/Spotlights Creation Production - Spotlights Creation Showcase(720P_HD).mp4" type="video/mp4">
+            </video>
+            <div class="hero-text">
+                <h1>A New Vision in Fashion</h1>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Spotlights Creation is a luxury fashion and catalog photography studio, offering a global-standard creative house for brands seeking a technology-forward partner.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><img src="assets/Screenshot 2026-02-07 at 13-43-58 Instagram.png" alt="Portfolio Image 1"></div>
+                <div class="portfolio-item"><img src="assets/Screenshot 2026-02-07 at 13-44-06 Instagram.png" alt="Portfolio Image 2"></div>
+                <div class="portfolio-item"><img src="assets/Screenshot 2026-02-07 at 13-44-17 Instagram.png" alt="Portfolio Image 3"></div>
+                <div class="portfolio-item"><img src="assets/Screenshot 2026-02-07 at 13-44-34 Instagram.png" alt="Portfolio Image 4"></div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Fashion Photography</li>
+                <li>Catalog Shoots</li>
+                <li>Brand Campaigns</li>
+                <li>Creative Direction</li>
+            </ul>
+        </section>
+
+        <section id="clients">
+            <h2>Our Clients</h2>
+            <div class="client-logos">
+                <img src="public/fblogo.jpg" alt="Client Logo">
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to create? <a href="mailto:contact@spotlightscreation.com">contact@spotlightscreation.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Spotlights Creation. All Rights Reserved.</p>
+    </footer>
+
+    <div id="ai-avatar-widget">
+        <div id="ai-avatar-button">AI</div>
+        <div id="ai-chat-window">
+            <div id="ai-chat-header">
+                <h3>Spotlights AI</h3>
+                <div id="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="hi">HI</button>
+                    <button class="lang-btn" data-lang="mr">MR</button>
+                </div>
+                <button id="close-chat">-</button>
+            </div>
+            <div id="ai-chat-body">
+                <div class="chat-message bot">Hello! How can I help you today?</div>
+            </div>
+            <div id="ai-chat-footer">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-chat">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
